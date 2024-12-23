@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #062246;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 70px;
+}
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 70px;
+    width: 75vw;
+    margin: 20px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px;
+    width: 75vw;
+    margin: 20px;
+}
+
+.card {
+    position: relative;
+    background-color: rgb(0, 244, 191, 1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    padding: 0; /* Remove o padding principal */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%; /* A largura da imagem ocupa todo o espaço horizontal */
+    height: auto; /* A altura se ajusta automaticamente para manter as proporções */
+    object-fit: contain; /* Garante que a imagem fique inteira no espaço disponível */
+    background-color: white; /* Fundo para áreas vazias */
+}
+
+.card-content {
+    position: absolute;
+    bottom: 0px;
+    padding: 20px; /* Define o espaçamento para o texto e o botão */
+    font-size: 25px;
+}
+
+.card button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: #007BFF;
+}
