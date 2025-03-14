@@ -1,0 +1,76 @@
+@import url(reset.css);
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f8f6;
+    color: #333;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #4e4e4e;
+    margin-top: 20px;
+    padding-top: 4%;
+    font-weight: 700;
+}
+
+.divisor {
+    width: 30%;
+    margin-top: 1rem;
+    height: 1px;
+    background-color: #333;
+}
+
+/* Estilo do grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1250px;
+    margin: 65px auto 120px auto;
+    padding: 0 20px;
+}
+
+.grid-item {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 4px solid #e3e4e8;
+}
+
+.grid-item img:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.grid-item p {
+    padding: 15px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    background-color: rgb(233, 233, 233);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

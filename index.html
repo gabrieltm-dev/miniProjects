@@ -3,54 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Meus Projetos</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Projetos</title>
 </head>
 <body>
-    <h1>Meus Projetos</h1>
 
-    <!-- Primeira linha (2 cards) -->
-    <div class="grid-container grid-1">
-        <div class="card">
-            <img src="./assets/img_boardgames2.png" alt="Imagem do projeto 2">
-            <div class="card-content">
-                <h3>Alguel de BoardGames</h3>
-                <button onclick="window.location.href='./alugames/index.html'">Ver Projeto</button>
-            </div>
-        </div>
-        <div class="card">
-            <img src="./assets/img_carrinhoCompras.png" alt="Imagem do projeto 2">
-            <div class="card-content">
-                <h3>Carrinho de compras</h3>
-                <button onclick="window.location.href='./carrinho-compras/index.html'">Ver Projeto</button>
-            </div>
-        </div>
+    <h1>Projetos em HTML & CSS & Javascript</h1>
+    <hr class="divisor">
+
+    <div class="grid-container">
+        <a href="./alugames/index.html" class="grid-item" target="_blank">
+            <img src="assets/projeto_board-games.png" alt="Imagem da cafeteria">
+            <p>Projeto Games</p>
+        </a>
+        <a href="./amigo-secreto/index.html" class="grid-item" target="_blank">
+            <img src="assets/projeto_amigo-secreto.png" alt="Imagem do município de Paraty">
+            <p>Projeto amigo secreto</p>
+        </a>
+        <a href="./carrinho-compras/index.html" class="grid-item" target="_blank">
+            <img src="assets/projeto_carrinho-compras.png" alt="Imagem da pousada">
+            <p>Projeto carrinho de compras</p>
+        </a>
+        <a href="./ingresso/index.html" class="grid-item" target="_blank">
+            <img src="assets/projeto_ingresso.png" alt="Imagem do filme">
+            <p>Projeto ingresso</p>
+        </a>
+        <a href="./sorteador-numeros/index.html" class="grid-item" target="_blank">
+            <img src="assets/projeto_sorteador-de-numeros.png" alt="Imagem do filme">
+            <p>Projeto sorteador de números</p>
+        </a>
     </div>
 
-    <!-- Segunda linha (3 cards) -->
-    <div class="grid-container grid-2">
-        <div class="card">
-            <img src="./assets/img_amigoSecreto.png" alt="Imagem do projeto 3">
-            <div class="card-content">
-                <h3>Amigo Secreto</h3>
-                <button onclick="window.location.href='./amigo-secreto/index.html'">Ver Projeto</button>
-            </div>
-        </div>
-        <div class="card">
-            <img src="./assets/oculos.png" alt="Imagem do projeto 4">
-            <div class="card-content">
-                <h3>Comprar Ingressos</h3>
-                <button onclick="window.location.href='./ingresso/index.html'">Ver Projeto</button>
-            </div>
-        </div>
-        <div class="card">
-            <img src="./assets/oculos.png" alt="Imagem do projeto 5">
-            <div class="card-content">
-                <h3>Sorteador de Números</h3>
-                <button onclick="window.location.href='./sorteador-numeros/index.html'">Ver Projeto</button>
-            </div>
-        </div>
-    </div>
+    <footer>
+        <p>Desenvolvido por Gabriel Melo</p>
+    </footer>
+
 </body>
 </html>
-
